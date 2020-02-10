@@ -1,0 +1,27 @@
+
+        // Age Calculator
+
+    function getAge(dt) {
+        var today = new Date();
+        var date = new Date(dt);
+        var birthDate = new Date(date);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age = age - 1;
+        }
+        document.getElementById("result").innerHTML =  age ;
+        return age;
+    }
+        // Age Calculator Ends
+
+        //Print function JS
+            $(function() {
+            $("#btnPrint").click(function() {
+                window.print();
+            });
+        });
+        //Print function JS Ends
+        // Print age
+        getAge('@Html.DisplayFor(model => model.PatientDetail.BirthDate)');
+        // Print age ends
