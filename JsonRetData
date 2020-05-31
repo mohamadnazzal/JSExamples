@@ -1,0 +1,13 @@
+    function bbtclick() {
+        var Form = document.getElementsByClassName('_Postcoital');
+        var childs = Form;
+        var json = "[{";
+        for (I = 0; I < childs.length; I++) {
+            var name = childs[I].getAttribute('name');
+            var value = childs[I].value;
+            json += '"' + name + '":' + '"' + value+'",';
+        }
+        json += "}]";
+        $("#JsonData").val(json);
+        console.log(json);
+    }
