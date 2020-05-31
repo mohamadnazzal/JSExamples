@@ -11,3 +11,13 @@
         $("#JsonData").val(json);
         console.log(json);
     }
+
+
+------------------
+
+                    <tr>
+                        <td valign="middle" align="center" style="width: 1%;"><input id="RPostcoitalPSCervicalCervicaloschkBox" name="RPostcoitalPSCervicalCervicaloschkBox" type="checkbox" onclick="javascript: checkManual();" value="@*@Model[i].UserId*@" /></td>
+                        <td style="width: 21%;" class="search_field">Cervical os </td>
+                        <td><input type="text" id="RPostcoitalPSCervicalCervicalos" class="_Postcoital" name="RPostcoitalPSCervicalCervicalos" placeholder="-" /></td>
+                        <td><p>-</p></td>
+                    </tr>
